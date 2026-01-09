@@ -24,6 +24,10 @@ ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',') if os.getenv(
     'ALLOWED_HOSTS'
 ) else []
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://stripe-payment-6byc.onrender.com",
+]
+
 # Application definition
 
 INSTALLED_APPS = [
